@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="#" id="logout-link">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div id="admin-actions" class="hidden">
+            <h2>Admin Actions</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-desc" placeholder="Description" required>
+                <input type="number" id="product-price" placeholder="Price" min="0" step="0.01" required>
+                <input type="text" id="product-category" placeholder="Category" required>
+                <input type="number" id="product-stock" placeholder="Stock Quantity" min="0" required>
+                <button type="submit" class="btn"><i class="fas fa-plus"></i> Add Product</button>
+            </form>
+        </div>
+        
+        <div id="products-container">
+            <!-- Sample Products -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Running Shoes">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Premium Running Shoes</h3>
+                    <span class="product-category">Footwear</span>
+                    <p class="product-description">High-performance running shoes with cushioned soles for maximum comfort during your workouts.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$129.99</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                    <div class="stock in-stock">In Stock (25+)</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1099&q=80" alt="Smart Watch">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Smart Watch Pro</h3>
+                    <span class="product-category">Electronics</span>
+                    <p class="product-description">Track your fitness, receive notifications, and monitor your health with this advanced smartwatch.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$199.99</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                    <div class="stock low-stock">Low Stock (3 left)</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Wireless Headphones">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Wireless Headphones</h3>
+                    <span class="product-category">Electronics</span>
+                    <p class="product-description">Premium noise-canceling headphones with 30-hour battery life and crystal-clear sound.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$149.99</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                    <div class="stock in-stock">In Stock (15+)</div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Backpack">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Travel Backpack</h3>
+                    <span class="product-category">Accessories</span>
+                    <p class="product-description">Durable and spacious backpack with multiple compartments for all your travel essentials.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$79.99</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                    <div class="stock out-of-stock">Out of Stock</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#" id="logout-link">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        
+        <div class="cart-actions">
+            <button id="clear-cart" class="btn">Clear Cart</button>
+            <button id="checkout" class="btn">Checkout</button>
+        </div>
+        
+        <div id="order-success" class="hidden">
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for your purchase.</p>
+            <a href="products.html" class="btn">Continue Shopping</a>
+        </div>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
